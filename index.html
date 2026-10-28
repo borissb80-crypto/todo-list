@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List — Список завдань</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="todo-card">
+        <header class="todo-header">
+            <h2>Список завдань</h2>
+        </header>
+
+        <form id="todo-form" class="todo-form">
+            <input 
+                type="text" 
+                id="todo-input" 
+                placeholder="Введіть нове завдання..." 
+                autocomplete="off" 
+                required
+            >
+            <button type="submit" id="add-btn">Додати</button>
+        </form>
+
+        <ul id="todo-list" class="todo-list">
+            <!-- Завдання генеруються динамічно через app.js -->
+        </ul>
+
+        <footer class="todo-footer">
+            <span id="tasks-count">Завдань: 0</span>
+            <button type="button" id="clear-completed-btn" class="clear-btn">Видалити виконані</button>
+        </footer>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
